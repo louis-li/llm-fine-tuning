@@ -40,7 +40,7 @@ jobs:
       image: mcr.microsoft.com/azureml/curated/acft-hf-nlp-gpu
     outputs:
       output_dir: ${{parent.outputs.trained_model}}
-    compute: azureml:NC48adsA100 #update NC48adsA100 to the name of your compute target 
+    compute: azureml:NC48ads #update NC48adsA100 to the name of your compute target 
 
     distribution:
       type: pytorch
