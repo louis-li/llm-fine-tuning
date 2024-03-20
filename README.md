@@ -8,7 +8,7 @@ Instruction:
 1. Setup your Azure ML CLI v2: https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli?view=azureml-api-2&tabs=public
 2. Make sure you have A100 GPU SKU (NCadsA100 or NDadsA100) series
 3. Checkout ```finetine_pipeline.yml``` for training parameters and update. Note some important parameters such as whether you're fine-tuning a Chat model vs. regular model because the format of the prompt is different in Chat model.
-4. Go to llma2 folder Run the training script: ``` az ml job create finetune_pipeline.yml```
+4. Go to llma2 folder Run the training script: ``` az ml job create --file finetune_pipeline.yml```
 
 
 5. Use the test.ipynb notebook to test the fine-tuned model.
